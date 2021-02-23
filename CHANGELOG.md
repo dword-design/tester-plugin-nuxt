@@ -1,0 +1,6 @@
+# 1.0.0 (2021-02-23)
+
+
+### Features
+
+* init ([721bb26](https://github.com/dword-design/tester-plugin-nuxt/commit/721bb261a5b7ed44b1f1dca3463d9b45eaee015d))
