@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/dword-design/tester-plugin-nuxt/compare/v1.0.1...v1.0.2) (2021-03-11)
+
+
+### Bug Fixes
+
+* remove quiet: true ([4f6dfd1](https://github.com/dword-design/tester-plugin-nuxt/commit/4f6dfd115ad11ab50401459c130ee010f04ebfe5))
+
 ## [1.0.1](https://github.com/dword-design/tester-plugin-nuxt/compare/v1.0.0...v1.0.1) (2021-02-23)
 
 
