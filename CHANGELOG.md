@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/dword-design/tester-plugin-nuxt/compare/v1.0.6...v1.0.7) (2021-03-25)
+
+
+### Bug Fixes
+
+* fix dev ([74639ec](https://github.com/dword-design/tester-plugin-nuxt/commit/74639ec5639dc34390226078ce22f02bc333506e))
+
 ## [1.0.6](https://github.com/dword-design/tester-plugin-nuxt/compare/v1.0.5...v1.0.6) (2021-03-25)
 
 
