@@ -5,7 +5,7 @@ export default (config = {}) => ({
     return this.nuxt.close()
   },
   async before() {
-    this.nuxt = new Nuxt({ ...config, dev: false })
+    this.nuxt = new Nuxt(config)
     await new Builder(this.nuxt).build()
     await this.nuxt.listen()
   },
