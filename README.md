@@ -64,7 +64,7 @@ $ yarn add @dword-design/tester-plugin-nuxt
 <!-- LICENSE/ -->
 ## Contribute
 
-Are you missing something or want to contribute? Feel free to file an [issue](https://github.com/dword-design/tester-plugin-nuxt/issues) or [pull request](https://github.com/dword-design/tester-plugin-nuxt/pulls)! ⚙️
+Are you missing something or want to contribute? Feel free to file an [issue](https://github.com/dword-design/tester-plugin-nuxt/issues) or a [pull request](https://github.com/dword-design/tester-plugin-nuxt/pulls)! ⚙️
 
 ## Support
 
