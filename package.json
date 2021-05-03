@@ -30,6 +30,9 @@
   "peerDependencies": {
     "nuxt": "^2.14.0"
   },
+  "engines": {
+    "node": ">=12"
+  },
   "publishConfig": {
     "access": "public"
   }
