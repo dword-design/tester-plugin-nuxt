@@ -1,3 +1,19 @@
+# [2.0.0](https://github.com/dword-design/tester-plugin-nuxt/compare/v1.0.12...v2.0.0) (2021-05-03)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v8 ([#18](https://github.com/dword-design/tester-plugin-nuxt/issues/18)) ([471171c](https://github.com/dword-design/tester-plugin-nuxt/commit/471171c7d5319ab8372b6ddcf09f5b2249338a35))
+
+
+### BREAKING CHANGES
+
+* require Node.js >= 12
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Sebastian Landwehr <info@dword-design.de>
+Co-authored-by: GitHub Actions <actions@github.com>
+
 ## [1.0.12](https://github.com/dword-design/tester-plugin-nuxt/compare/v1.0.11...v1.0.12) (2021-04-28)
 
 
