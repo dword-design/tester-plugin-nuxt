@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/dword-design/tester-plugin-nuxt/compare/v2.0.1...v2.0.2) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency fs-extra to v10 ([#21](https://github.com/dword-design/tester-plugin-nuxt/issues/21)) ([1a87c1f](https://github.com/dword-design/tester-plugin-nuxt/commit/1a87c1f9578b3c3a7ea3d5fb656f40a6ff767a3c))
+
 ## [2.0.1](https://github.com/dword-design/tester-plugin-nuxt/compare/v2.0.0...v2.0.1) (2021-05-04)
 
 
