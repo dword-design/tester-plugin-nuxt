@@ -1,3 +1,10 @@
+## [2.0.8](https://github.com/dword-design/tester-plugin-nuxt/compare/v2.0.7...v2.0.8) (2021-10-05)
+
+
+### Bug Fixes
+
+* update dependency axios to ^0.22.0 ([59ff37e](https://github.com/dword-design/tester-plugin-nuxt/commit/59ff37e44bdb8e37826ecd33b5003682a6066713))
+
 ## [2.0.7](https://github.com/dword-design/tester-plugin-nuxt/compare/v2.0.6...v2.0.7) (2021-07-20)
 
 
