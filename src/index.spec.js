@@ -1,9 +1,9 @@
 import { property } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import axios from 'axios'
-import { mkdir, remove } from 'fs-extra'
+import fs from 'fs-extra'
 
-import self from '.'
+import self from './index.js'
 
 export default tester(
   {
@@ -19,10 +19,10 @@ export default tester(
     {
       after: async () => {
         process.chdir('..')
-        await remove('testdir')
+        await fs.remove('testdir')
       },
       before: async () => {
-        await mkdir('testdir')
+        await fs.mkdir('testdir')
         process.chdir('testdir')
       },
     },
