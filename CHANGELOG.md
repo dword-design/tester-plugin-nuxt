@@ -1,3 +1,10 @@
+## [2.0.12](https://github.com/dword-design/tester-plugin-nuxt/compare/v2.0.11...v2.0.12) (2023-03-13)
+
+
+### Bug Fixes
+
+* use prod mode ([#85](https://github.com/dword-design/tester-plugin-nuxt/issues/85)) ([4540d15](https://github.com/dword-design/tester-plugin-nuxt/commit/4540d15f401e252c4290d43d721c929c239f3341))
+
 ## [2.0.11](https://github.com/dword-design/tester-plugin-nuxt/compare/v2.0.10...v2.0.11) (2023-01-22)
 
 
