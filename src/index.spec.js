@@ -11,7 +11,7 @@ export default tester(
       const result =
         axios.get('http://localhost:3000') |> await |> property('data')
       expect(result).toMatch(
-        'Please create <a href="https://nuxtjs.org/guide/directory-structure#the-pages-directory" target="_blank">the pages directory</a> to suppress this default page.'
+        'Please create <a href="https://nuxtjs.org/guide/directory-structure#the-pages-directory" target="_blank">the pages directory</a> to suppress this default page.',
       )
     },
   },
@@ -27,5 +27,5 @@ export default tester(
       },
     },
     self(),
-  ]
+  ],
 )
