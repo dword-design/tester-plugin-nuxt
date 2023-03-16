@@ -1,3 +1,10 @@
+## [2.0.15](https://github.com/dword-design/tester-plugin-nuxt/compare/v2.0.14...v2.0.15) (2023-03-16)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v9.4.11 ([bd9fee7](https://github.com/dword-design/tester-plugin-nuxt/commit/bd9fee7e50ca627fda1cdfa347ba58f8dc299924))
+
 ## [2.0.14](https://github.com/dword-design/tester-plugin-nuxt/compare/v2.0.13...v2.0.14) (2023-03-15)
 
 
