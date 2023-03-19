@@ -1422,9 +1422,9 @@
     param-case "^3.0.3"
 
 "@dword-design/base-config-node@^1.6.0":
-  version "1.10.20"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-node/-/base-config-node-1.10.20.tgz#7f823322721353f10897a94d541e839b0bfd12a3"
-  integrity sha512-mjd4V1G1TPJenpjhnBVHxu40bHv2b+yDFGr1ou8mly1iKhzom6bDfwsWtIUqyJEN5mnUk2u3vmT6ZI7GJnk4CA==
+  version "1.10.21"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-config-node/-/base-config-node-1.10.21.tgz#475c126f4c09fb0fcebe83daa0480a26b4c34cf4"
+  integrity sha512-TrurM0Qz4V4EY2XulwB1SL+4Nxi0WQuD2qm/DD35K6aZLKHR2RzL6ySxIpgD4mwUS4OVMXEyv7gZs4nvTr0P4w==
   dependencies:
     "@babel/cli" "^7.7.5"
     "@babel/core" "^7.7.5"
@@ -1440,9 +1440,9 @@
     micromatch "^4.0.2"
 
 "@dword-design/base@^9.2.4":
-  version "9.4.34"
-  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-9.4.34.tgz#849f67bb7b61d68f9ddaccfd1d5462a449ab377a"
-  integrity sha512-AbybuP4o/ho1ro879nm9O4I8rpMyCIXgEJXtdZmH71bvp1P1e6EyqNS+iMbaWGfM+tgvMi8EGncJXEoYm3pKfw==
+  version "9.4.37"
+  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-9.4.37.tgz#3484e088aeddc241b915b4bc85d017f1829b1ea3"
+  integrity sha512-XP5b86k2mKmJAmJf0THpayFSgUzkKbgYvyPy1nRetgMpu+ouXiR1oU7Y+9ryAiSCnFA0YjELe9GK1QMAKGiCqA==
   dependencies:
     "@commitlint/cli" "^17.4.0"
     "@commitlint/config-conventional" "^17.4.0"
@@ -5471,9 +5471,9 @@ delete-empty@^3.0.0:
     rimraf "^2.6.2"
 
 depcheck-detector-execa@^3.0.4:
-  version "3.0.13"
-  resolved "https://registry.yarnpkg.com/depcheck-detector-execa/-/depcheck-detector-execa-3.0.13.tgz#2b837e76527d1c7ae7702a0540beaf1e8c43a519"
-  integrity sha512-opw9Wm7lUJL3Rk0RkyW9Z8NUFLIbdK0GEgJWrmBaL7sLdI5dpbH4atJRnHekazR8opjshTtTOPWXJUEzOP18Pw==
+  version "3.0.14"
+  resolved "https://registry.yarnpkg.com/depcheck-detector-execa/-/depcheck-detector-execa-3.0.14.tgz#48df0ca6e8f81124b06fca1ab0d8da5aac192b07"
+  integrity sha512-idz/+9bz3EKD0tjSsuCjFF7ygyPN5ezvtZ7rNUBv7HbGres68lhOZWLcFD2Vxcn1L8FVtthaIFAnFtHnnPW5pg==
   dependencies:
     "@dword-design/functions" "^4.0.0"
     fs-extra "^11.1.0"
@@ -6573,9 +6573,9 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
     homedir-polyfill "^1.0.1"
 
 expect-mocha-image-snapshot@^3.0.1:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/expect-mocha-image-snapshot/-/expect-mocha-image-snapshot-3.0.5.tgz#a6d310b661b8650f4f342a0bebaa9feed89af345"
-  integrity sha512-2Vm6ba1FHXkmzh5hT16urM73eS17ZaDMK0bH5CrKK63wytB0DOyDZo6Ei4c7FlOoED0b46iGSilxjyyrtWirUQ==
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/expect-mocha-image-snapshot/-/expect-mocha-image-snapshot-3.0.6.tgz#ade1a15da2d867054351ad3ed2fb2af77d7cd42b"
+  integrity sha512-ZIMd+GHKpbwsV4GC/4m7RgOUImrBqAsow8dv7/X+ElICPaL6X0KsbldlUOW8weGUZApf6eyiXyXeodHe4qGuSw==
   dependencies:
     jest-image-snapshot "^4.4.0"
     jest-snapshot "^27.0.0"
@@ -11286,9 +11286,9 @@ os-tmpdir@~1.0.2:
   integrity sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==
 
 output-files@^2.0.0:
-  version "2.0.16"
-  resolved "https://registry.yarnpkg.com/output-files/-/output-files-2.0.16.tgz#f644d800983ebb500d6145b5a776573416a38925"
-  integrity sha512-PziDomyEjK+i+EDcjl6+9Fkl+HVtflhsPgjCtJ8Vxev1bh14JCTGHDTiIFbXjytUhO7e0cBFNc6pQ/MOfYsLow==
+  version "2.0.17"
+  resolved "https://registry.yarnpkg.com/output-files/-/output-files-2.0.17.tgz#0e9253a2e37f23988bc7a1847ced43403f2833f4"
+  integrity sha512-yAQc8XHrkNVgzOB0N/NCuaq7esX9vpw8+B4Fm2UdmuBOCLSvlsixwfF/VaAOlbcDRh4mMqGtTGS8blrEJYmfjQ==
   dependencies:
     "@dword-design/functions" "^4.0.0"
     fs-extra "^11.1.0"
