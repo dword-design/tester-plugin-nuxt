@@ -1440,9 +1440,9 @@
     micromatch "^4.0.2"
 
 "@dword-design/base@^9.2.4":
-  version "9.4.44"
-  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-9.4.44.tgz#adcbae1d94d04ed17ba786da28d9717ffc01bf05"
-  integrity sha512-/hTA7Y9mfzR4NZ8bX2OMdMMtR7PC6Jaoze+Oon24YKAGKyuU6okY8GzvfMvnB7/ZUCcdB6g9uDrKQ83CRgQUZA==
+  version "9.4.45"
+  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-9.4.45.tgz#20a1fc77f47e567c8f755bc2b53daf8a4009a54a"
+  integrity sha512-8vdeYWxfv7ygTqy58Qu1f7f1/rbaecUbjK6Y4CbHOeNLQ7Xy2xyY/6G0Ex38Tnq3A5J9mgo7JlcSiNveL1kxiw==
   dependencies:
     "@commitlint/cli" "^17.4.0"
     "@commitlint/config-conventional" "^17.4.0"
