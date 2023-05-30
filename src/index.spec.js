@@ -1,31 +1,39 @@
-import { property } from '@dword-design/functions'
+import { endent } from '@dword-design/functions'
 import tester from '@dword-design/tester'
-import axios from 'axios'
-import fs from 'fs-extra'
-
-import self from './index.js'
+import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir'
+import packageName from 'depcheck-package-name'
+import { execaCommand } from 'execa'
+import outputFiles from 'output-files'
 
 export default tester(
   {
-    works: async () => {
-      const result =
-        axios.get('http://localhost:3000') |> await |> property('data')
-      expect(result).toMatch(
-        'Please create <a href="https://nuxtjs.org/guide/directory-structure#the-pages-directory" target="_blank">the pages directory</a> to suppress this default page.',
+    valid: async () => {
+      await outputFiles({
+        pages: {
+          'index.spec.js': endent`
+            import tester from '${packageName`@dword-design/tester`}'
+            import testerPluginPuppeteer from '${packageName`@dword-design/tester-plugin-puppeteer`}'
+
+            import self from '../../src/index.js'
+
+            export default tester({
+              async valid() {
+                this.page.goto('http://localhost:3000')
+                await this.page.waitForSelector('.foo')
+              },
+            }, [testerPluginPuppeteer(), self()])
+          `,
+          'index.vue': endent`
+            <template>
+              <div class="foo" />
+            </template>
+          `,
+        },
+      })
+      await execaCommand(
+        'mocha --ui exports --timeout 20000 pages/index.spec.js',
       )
     },
   },
-  [
-    {
-      after: async () => {
-        process.chdir('..')
-        await fs.remove('testdir')
-      },
-      before: async () => {
-        await fs.mkdir('testdir')
-        process.chdir('testdir')
-      },
-    },
-    self(),
-  ],
+  [testerPluginTmpDir()],
 )
