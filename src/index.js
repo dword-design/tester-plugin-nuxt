@@ -7,8 +7,12 @@ export default () => ({
     await kill(this.nuxt.pid)
   },
   async before() {
-    await execaCommand('nuxt build')
-    this.nuxt = execaCommand('nuxt start')
+    await execaCommand('nuxt build', {
+      env: { NODE_ENV: 'production' },
+    })
+    this.nuxt = execaCommand('nuxt start', {
+      env: { NODE_ENV: 'production' },
+    })
     await portReady(3000)
   },
 })

@@ -31,7 +31,7 @@ export default tester(
         },
       })
       await execaCommand(
-        'mocha --ui exports --timeout 20000 pages/index.spec.js',
+        'mocha --ui exports --timeout 60000 pages/index.spec.js',
       )
     },
   },
