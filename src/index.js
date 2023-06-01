@@ -1,5 +1,5 @@
 import { execaCommand } from 'execa'
-import nuxtDevReady from 'nuxt-dev-ready'
+import portReady from 'port-ready'
 import kill from 'tree-kill-promise'
 
 export default () => ({
@@ -7,7 +7,8 @@ export default () => ({
     await kill(this.nuxt.pid)
   },
   async before() {
-    this.nuxt = execaCommand('nuxt dev')
-    await nuxtDevReady()
+    await execaCommand('nuxt build')
+    this.nuxt = execaCommand('nuxt start')
+    await portReady(3000)
   },
 })
