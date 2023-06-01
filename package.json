@@ -39,7 +39,7 @@
     "output-files": "^2.0.28"
   },
   "peerDependencies": {
-    "nuxt": "^2.14.0"
+    "nuxt": "^3.0.0"
   },
   "engines": {
     "node": ">=16"
