@@ -18,7 +18,7 @@ export default tester(
 
             export default tester({
               async valid() {
-                this.page.goto('http://localhost:3000')
+                await this.page.goto('http://localhost:3000')
                 await this.page.waitForSelector('.foo')
               },
             }, [testerPluginPuppeteer(), self()])
