@@ -31,10 +31,7 @@ export default tester(
           `,
         },
       })
-      await execaCommand(
-        'mocha --ui exports --timeout 60000 pages/index.spec.js',
-        { stdio: 'inherit' },
-      )
+      await execaCommand('mocha --ui exports --timeout 60000 pages/index.spec.js')
     },
   },
   [testerPluginTmpDir()],
