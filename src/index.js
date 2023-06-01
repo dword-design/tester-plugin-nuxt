@@ -7,8 +7,8 @@ export default () => ({
     await kill(this.nuxt.pid)
   },
   async before() {
-    await execaCommand('nuxt build')
-    this.nuxt = execaCommand('nuxt start')
+    await execaCommand('nuxt build', { stdio: 'inherit' })
+    this.nuxt = execaCommand('nuxt start', { stdio: 'inherit' })
     await portReady(3000)
   },
 })
