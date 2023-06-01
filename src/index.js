@@ -8,12 +8,10 @@ export default () => ({
   },
   async before() {
     await execaCommand('nuxt build', {
-      env: { NODE_ENV: 'production', NUXT_TELEMETRY_DISABLED: 1 },
-      stdio: 'inherit',
+      env: { NODE_ENV: 'production' },
     })
     this.nuxt = execaCommand('nuxt start', {
-      env: { NODE_ENV: 'production', NUXT_TELEMETRY_DISABLED: 1 },
-      stdio: 'inherit',
+      env: { NODE_ENV: 'production' },
     })
     await portReady(3000)
   },
