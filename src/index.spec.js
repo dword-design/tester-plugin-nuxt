@@ -19,6 +19,7 @@ export default tester(
             export default tester({
               async valid() {
                 await this.page.goto('http://localhost:3000')
+                console.log(await this.page.content())
                 await this.page.waitForSelector('.foo')
               },
             }, [testerPluginPuppeteer(), self()])
@@ -32,6 +33,7 @@ export default tester(
       })
       await execaCommand(
         'mocha --ui exports --timeout 20000 pages/index.spec.js',
+        { stdio: 'inherit' },
       )
     },
   },
