@@ -1,3 +1,11 @@
+## [3.0.1](https://github.com/dword-design/tester-plugin-nuxt/compare/v3.0.0...v3.0.1) (2023-06-01)
+
+
+### Bug Fixes
+
+* fix windows ([#111](https://github.com/dword-design/tester-plugin-nuxt/issues/111)) ([6f60c6d](https://github.com/dword-design/tester-plugin-nuxt/commit/6f60c6d0ab3844c963a906da9ca4da6f6dc61b89))
+* use nuxt build and nuxt start ([46959b2](https://github.com/dword-design/tester-plugin-nuxt/commit/46959b25ced70223b6f54f711d719f2621837ec0))
+
 # [3.0.0](https://github.com/dword-design/tester-plugin-nuxt/compare/v2.0.28...v3.0.0) (2023-05-30)
 
 
