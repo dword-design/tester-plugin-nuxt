@@ -22,7 +22,7 @@
     "test": "base test"
   },
   "dependencies": {
-    "@dword-design/base": "^10.0.3",
+    "@dword-design/base": "^11.0.0",
     "@dword-design/base-config-nuxt": "^5.0.4",
     "depcheck-package-name": "^3.0.0",
     "port-ready": "^0.1.0",
