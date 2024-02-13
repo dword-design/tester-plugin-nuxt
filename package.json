@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@dword-design/base": "^11.0.2",
-    "@dword-design/base-config-nuxt": "^5.0.4",
+    "@dword-design/base-config-nuxt": "^6.0.0",
     "depcheck-package-name": "^3.0.0",
     "port-ready": "^0.1.0",
     "tree-kill-promise": "^3.0.14"
