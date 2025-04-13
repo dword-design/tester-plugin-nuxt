@@ -24,16 +24,16 @@ export default tester(
         }),
         pages: {
           'index.spec.js': endent`
-            import tester from '${packageName`@dword-design/tester`}'
-            import { chromium } from '${packageName`playwright`}'
+            import tester from '${packageName`@dword-design/tester`}';
+            import { chromium } from '${packageName`playwright`}';
 
-            import self from '../../src/index.js'
+            import self from '../../src/index.js';
 
             export default tester({
               async valid() {
-                await this.page.goto('http://localhost:3000')
-                const foo = await this.page.waitForSelector('.foo')
-                expect(await foo.evaluate(el => el.innerText)).toEqual('bar')
+                await this.page.goto('http://localhost:3000');
+                const foo = await this.page.waitForSelector('.foo');
+                expect(await foo.evaluate(el => el.innerText)).toEqual('bar');
               },
             }, [
               {
@@ -59,9 +59,9 @@ export default tester(
             </template>
 
             <script setup>
-            import { useRuntimeConfig } from '#imports'
+            import { useRuntimeConfig } from '#imports';
 
-            const { public: { foo } } = useRuntimeConfig()
+            const { public: { foo } } = useRuntimeConfig();
             </script>
           `,
         },
@@ -78,15 +78,15 @@ export default tester(
         }),
         pages: {
           'index.spec.js': endent`
-            import tester from '${packageName`@dword-design/tester`}'
-            import { chromium } from '${packageName`playwright`}'
+            import tester from '${packageName`@dword-design/tester`}';
+            import { chromium } from '${packageName`playwright`}';
 
-            import self from '../../src/index.js'
+            import self from '../../src/index.js';
 
             export default tester({
               async valid() {
-                await this.page.goto('http://localhost:3000')
-                await this.page.waitForSelector('.foo')
+                await this.page.goto('http://localhost:3000');
+                await this.page.waitForSelector('.foo', { state: 'attached' });
               },
             }, [
               {
