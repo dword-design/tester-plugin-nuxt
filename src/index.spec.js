@@ -1,9 +1,9 @@
-import { Base } from '@dword-design/base'
-import { endent } from '@dword-design/functions'
-import tester from '@dword-design/tester'
-import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir'
-import packageName from 'depcheck-package-name'
-import outputFiles from 'output-files'
+import { Base } from '@dword-design/base';
+import { endent } from '@dword-design/functions';
+import tester from '@dword-design/tester';
+import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir';
+import packageName from 'depcheck-package-name';
+import outputFiles from 'output-files';
 
 export default tester(
   {
@@ -20,25 +20,38 @@ export default tester(
           }
         `,
         'package.json': JSON.stringify({
-          devDependencies: {
-            '@dword-design/tester': '*',
-            '@dword-design/tester-plugin-puppeteer': '*',
-          },
+          devDependencies: { '@dword-design/tester': '*', playwright: '*' },
         }),
         pages: {
           'index.spec.js': endent`
-            import tester from '${packageName`@dword-design/tester`}'
-            import testerPluginPuppeteer from '${packageName`@dword-design/tester-plugin-puppeteer`}'
+            import tester from '${packageName`@dword-design/tester`}';
+            import { chromium } from '${packageName`playwright`}';
 
-            import self from '../../src/index.js'
+            import self from '../../src/index.js';
 
             export default tester({
               async valid() {
-                await this.page.goto('http://localhost:3000')
-                const foo = await this.page.waitForSelector('.foo')
-                expect(await foo.evaluate(el => el.innerText)).toEqual('bar')
+                await this.page.goto('http://localhost:3000');
+                const foo = await this.page.waitForSelector('.foo');
+                expect(await foo.evaluate(el => el.innerText)).toEqual('bar');
               },
-            }, [testerPluginPuppeteer(), self()])
+            }, [
+              {
+                async before() {
+                  this.browser = await chromium.launch();
+                },
+                async beforeEach() {
+                  this.page = await this.browser.newPage();
+                },
+                async after() {
+                  await this.browser.close();
+                },
+                async afterEach() {
+                  await this.page.close();
+                },
+              },
+              self(),
+            ]);
           `,
           'index.vue': endent`
             <template>
@@ -46,39 +59,52 @@ export default tester(
             </template>
 
             <script setup>
-            import { useRuntimeConfig } from '#imports'
+            import { useRuntimeConfig } from '#imports';
 
-            const { public: { foo } } = useRuntimeConfig()
+            const { public: { foo } } = useRuntimeConfig();
             </script>
           `,
         },
-      })
+      });
 
-      const base = new Base({ name: '@dword-design/base-config-nuxt' })
-      await base.prepare()
-      await base.test()
+      const base = new Base({ name: '@dword-design/base-config-nuxt' });
+      await base.prepare();
+      await base.test();
     },
     valid: async () => {
       await outputFiles({
         'package.json': JSON.stringify({
-          devDependencies: {
-            '@dword-design/tester': '*',
-            '@dword-design/tester-plugin-puppeteer': '*',
-          },
+          devDependencies: { '@dword-design/tester': '*', playwright: '*' },
         }),
         pages: {
           'index.spec.js': endent`
-            import tester from '${packageName`@dword-design/tester`}'
-            import testerPluginPuppeteer from '${packageName`@dword-design/tester-plugin-puppeteer`}'
+            import tester from '${packageName`@dword-design/tester`}';
+            import { chromium } from '${packageName`playwright`}';
 
-            import self from '../../src/index.js'
+            import self from '../../src/index.js';
 
             export default tester({
               async valid() {
-                await this.page.goto('http://localhost:3000')
-                await this.page.waitForSelector('.foo')
+                await this.page.goto('http://localhost:3000');
+                await this.page.waitForSelector('.foo', { state: 'attached' });
               },
-            }, [testerPluginPuppeteer(), self()])
+            }, [
+              {
+                async before() {
+                  this.browser = await chromium.launch();
+                },
+                async beforeEach() {
+                  this.page = await this.browser.newPage();
+                },
+                async after() {
+                  await this.browser.close();
+                },
+                async afterEach() {
+                  await this.page.close();
+                },
+              },
+              self(),
+            ]);
           `,
           'index.vue': endent`
             <template>
@@ -86,12 +112,12 @@ export default tester(
             </template>
           `,
         },
-      })
+      });
 
-      const base = new Base({ name: '@dword-design/base-config-nuxt' })
-      await base.prepare()
-      await base.test()
+      const base = new Base({ name: '@dword-design/base-config-nuxt' });
+      await base.prepare();
+      await base.test();
     },
   },
   [testerPluginTmpDir()],
-)
+);
