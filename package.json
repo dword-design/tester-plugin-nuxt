@@ -23,19 +23,20 @@
   },
   "dependencies": {
     "@dword-design/base": "^11.0.2",
-    "@dword-design/base-config-nuxt": "^5.0.4",
+    "@dword-design/base-config-nuxt": "^6.1.4",
     "depcheck-package-name": "^3.0.0",
     "port-ready": "^0.1.0",
     "tree-kill-promise": "^3.0.14"
   },
   "devDependencies": {
-    "@dword-design/functions": "^5.0.22",
+    "@dword-design/functions": "^6.0.2",
     "@dword-design/puppeteer": "^6.0.10",
     "@dword-design/tester": "^2.0.0",
     "@dword-design/tester-plugin-puppeteer": "^2.1.68",
     "@dword-design/tester-plugin-tmp-dir": "^2.1.26",
     "output-files": "^2.0.28"
   },
+  "packageManager": "pnpm@10.8.0+sha256.29bf2c5ceaea7991ee82eec15fe7162e0fad816d0c4a6b35a16c01d39274bf69",
   "engines": {
     "node": ">=18"
   },
