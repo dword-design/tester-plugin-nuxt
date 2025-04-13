@@ -86,7 +86,7 @@ export default tester(
             export default tester({
               async valid() {
                 await this.page.goto('http://localhost:3000');
-                await this.page.waitForSelector('.foo', { state: 'attached' });
+                await this.page.waitForSelector('.foo', { state: 'attached' });
               },
             }, [
               {
