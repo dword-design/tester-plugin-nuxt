@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/dword-design/tester-plugin-nuxt/compare/v4.0.1...v4.0.2) (2025-04-22)
+
+
+### Bug Fixes
+
+* dev mode ([6e32afc](https://github.com/dword-design/tester-plugin-nuxt/commit/6e32afc21356c6edafd48bed0da2822125fe0c8d))
+
 ## [4.0.1](https://github.com/dword-design/tester-plugin-nuxt/compare/v4.0.0...v4.0.1) (2025-04-13)
 
 
