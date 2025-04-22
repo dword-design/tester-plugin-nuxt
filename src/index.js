@@ -1,6 +1,6 @@
 import { Base } from '@dword-design/base';
 import packageName from 'depcheck-package-name';
-import portReady from 'port-ready';
+import nuxtDevReady from 'nuxt-dev-ready';
 import kill from 'tree-kill-promise';
 
 export default () => ({
@@ -12,8 +12,7 @@ export default () => ({
       name: packageName`@dword-design/base-config-nuxt`,
     });
 
-    await base.run('prepublishOnly');
-    this.nuxt = base.run('start');
-    await portReady(3000);
+    this.nuxt = base.run('dev');
+    await nuxtDevReady();
   },
 });
